@@ -63,7 +63,7 @@
   (let [results ((juxt pair flush straight) hand)]
     (match results
       [_ :Flush :RoyalStraight] :RoyalStraightFlush
-      [_ :Flush :Straight] :Straight
+      [_ :Flush :Straight] :StraightFlush
       [:FourCard _ _]  :FourCard
       [:FullHouse _ _] :FullHouse
       [_  :Flush _]  :Flush

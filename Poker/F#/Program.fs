@@ -69,7 +69,7 @@ let CheckRank (hand:List<Card>) =
     
     match result with
     | [|_;Rank.Flush|Rank.RoyalStraight|] -> Rank.RoyalStraightFlush
-    | [|_;Rank.Flush|Rank.Straight|] -> Rank.Straight
+    | [|_;Rank.Flush|Rank.Straight|] -> Rank.StraightFlush
     | [|Rank.FourCard;_;_|] -> Rank.FourCard
     | [|Rank.FullHouse;_;_|] -> Rank.FullHouse
     | [|_;Rank.Flush;_|] -> Rank.Flush
